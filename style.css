@@ -1,0 +1,4385 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#navBar {
+    width: 100%;
+    /* margin-top: -6px; */
+    background-color: #4668a2;
+    padding: 20px;
+
+
+    .navbar-brand {
+        font-size: 30px;
+        color: aquamarine;
+        font-weight: bold;
+    }
+
+    #navbarSupportedContent {
+        * {
+            font-size: 18px;
+            color: aliceblue;
+        }
+
+        ul>li>a:hover {
+            color: #47b2e4;
+        }
+    }
+
+    #navbarSupportedContent:hover {
+        .a:hover {
+            color: #47b2e4;
+        }
+    }
+
+    .navbar-toggler {
+        border: none;
+        box-shadow: none;
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+    }
+}
+
+#btn {
+    border-radius: 50px;
+    background-color: skyblue;
+    padding: 9px 18px 9px 18px;
+    border: none;
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #4668a2;
+    width: 100%;
+
+    #bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 30px;
+        width: 550px;
+
+        #better {
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+        }
+
+        #we {
+            font-size: 28px;
+            font-style: italic;
+            color: white;
+
+        }
+
+        #button {
+            display: flex;
+            flex-direction: row;
+            gap: 18px;
+
+            #get {
+                background-color: rgb(0, 183, 255);
+                padding: 10px 16px 10px 16px;
+                font-size: 20px;
+                border-radius: 50px;
+                color: white;
+                border: none;
+            }
+
+            #video {
+                font-size: 23px;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    text-decoration: none;
+                    color: white;
+                    padding: 10px 16px 10px 16px;
+
+                    .icon {
+                        font-size: 28px;
+
+                    }
+                }
+            }
+
+            #video:hover {
+                #icon:hover {
+                    color: #47b2e4;
+                }
+            }
+        }
+
+    }
+
+    #bar1 {}
+
+}
+
+#pic {
+    width: 700px;
+    margin-top: 20px;
+    animation: animate 3s alternate infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.logo_icons {
+    background-color: rgba(128, 128, 128, 0.285);
+}
+
+.slick-slide {
+    margin: 25px 90px;
+}
+
+#home1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 70px;
+    margin-top: 50px;
+
+    #room1 {
+        font-size: 50px;
+        font-weight: bold;
+        color: gray;
+        border-bottom: 2px black solid;
+    }
+
+    #room1::after {
+        content: "";
+        border: 3px rgb(0, 183, 255) solid;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    #room2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        font-size: 18px;
+        padding: 20px;
+
+        #door1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 10px;
+            width: 700px;
+        }
+
+        #door2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 20px;
+            width: 680px;
+
+            #read {
+                background-color: white;
+                border-radius: 15px;
+                color: rgb(0, 183, 255);
+                font-size: 18px;
+                padding: 10px 20px 10px 20px;
+            }
+
+            #read:hover {
+                background-color: rgb(0, 183, 255);
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+#home2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    gap: 40px;
+    background-color: rgba(128, 128, 128, 0.159);
+
+    #door1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+
+        #e {
+            font-size: 40px;
+        }
+
+        #lorem {
+            font-size: 18px;
+
+        }
+
+        #accordionPanelsStayOpenExample {
+            .accordion-item {
+                margin-bottom: 30px;
+                box-shadow: 0px 5px 25px rgb(128, 128, 128);
+
+                h2 button {
+                    border: none;
+                    outline: none;
+                    box-shadow: none;
+                    color: #37517e;
+                    font-size: 18px;
+                    margin-bottom: 0;
+                    border-bottom: none;
+                }
+
+                button:hover {
+                    color: rgb(0, 177, 247);
+                }
+
+                .accordion-button:not(.collapsed) {
+                    color: rgb(0, 177, 248);
+                }
+
+                .accordion-collapse .accordion-body {
+                    margin-top: 0;
+                    padding-top: 0;
+                }
+
+            }
+        }
+    }
+
+    #door2 {
+        #photo {
+            width: 500px;
+        }
+    }
+}
+
+#home3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    #door1 {
+        #pic1 {
+            width: 650px;
+            padding: 40px;
+        }
+    }
+
+    #door2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+
+        #v {
+            font-size: 40px;
+            color: #052c65;
+        }
+
+        #l1 {
+            font-size: 18px;
+            color: gray;
+            font-style: italic;
+        }
+
+        #name {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 600px;
+
+            #tech {
+                font-size: 15px;
+                color: #37517e;
+                font-weight: bold;
+            }
+        }
+
+        #name1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 620px;
+
+            #tech {
+                font-size: 15px;
+                color: #37517e;
+                font-weight: bold;
+            }
+        }
+
+        #name2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 560px;
+
+            #tech {
+                font-size: 15px;
+                color: #37517e;
+                font-weight: bold;
+            }
+        }
+
+        #name3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 560px;
+
+            #tech {
+                font-size: 15px;
+                color: #37517e;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+#home4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: #f5f6f8;
+    padding: 30px;
+    width: 100%;
+
+    #door1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        color: #37517e;
+        font-weight: bold;
+        border-bottom: 2px black solid;
+    }
+
+    #door1::after {
+        content: "";
+        border: 3px rgb(0, 183, 255) solid;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #door2 {
+        font-size: 18px;
+        color: gray;
+    }
+
+    #card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        #icon {
+            font-size: 30px;
+            color: rgb(0, 181, 252);
+        }
+
+        #card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 15px;
+            box-shadow: 0px 5px 25px rgb(196, 196, 196);
+            padding: 60px 20px;
+            border-radius: 8px;
+            transition: transform 3s linear;
+
+            #lo {
+                font-size: 22px;
+                color: #052c65;
+            }
+
+            #para {
+                font-size: 18px;
+                width: 280px;
+            }
+        }
+
+        #card-body:hover {
+            transform: translateY(-5px);
+            transition: linear;
+
+            #lo {
+                color: rgb(0, 183, 255);
+            }
+        }
+
+    }
+}
+
+#home5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 170px;
+    background-image: url(https://bootstrapmade.com/content/demo/Arsha/assets/img/cta-bg.jpg);
+    margin-top: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+
+    #door1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 23px;
+        color: white;
+
+        #call {
+            font-size: 40px;
+        }
+
+        #do {
+            width: 950px;
+            font-size: 20px;
+        }
+    }
+
+    #door2 {
+        #action {
+            font-size: 25px;
+            padding: 13px 35px;
+            border-radius: 50px;
+            background: none;
+            color: white;
+            border: 2px white solid;
+        }
+
+        #action:hover {
+            background-color: rgb(0, 183, 255);
+            border: none;
+        }
+    }
+}
+
+#home6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    #door {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        #port {
+            font-size: 50px;
+            color: #37517e;
+            border-bottom: 2px black solid;
+        }
+
+        #port::after {
+            content: "";
+            border: 3px rgb(0, 183, 255) solid;
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #n {
+            font-size: 22px;
+            color: gray;
+        }
+
+        #buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+
+            #al {
+                font-size: 18px;
+                padding: 10px 25px;
+                border-radius: 30px;
+                border: none;
+                background-color: #2980b9;
+            }
+        }
+
+
+        #all {
+            font-size: 18px;
+            padding: 10px 25px;
+            border-radius: 30px;
+            border: none;
+            background: none;
+        }
+
+        #all:hover {
+            background-color: #2980b9;
+        }
+    }
+
+    #sub_door {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        margin-top: 90px;
+
+        #Apps {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: -90px;
+
+            #app1 {
+                width: 500px;
+                transition: transform 2s linear;
+            }
+
+            #app1:hover {
+                transform: translateY(-10px);
+            }
+
+            #app2 {
+                width: 500px;
+                height: 600px;
+                transition: transform 2s linear;
+            }
+
+            #app2:hover {
+                transform: translateY(-10px);
+            }
+        }
+
+        #branding {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            #brand1 {
+                width: 400px;
+                transition: transform 2s linear;
+            }
+
+            #brand1:hover {
+                transform: translateY(-10px);
+            }
+
+            #brand2 {
+                width: 400px;
+                height: 500px;
+                transition: transform 2s linear;
+            }
+
+            #brand2:hover {
+                transform: translateY(-10px);
+            }
+
+            #brand3 {
+                width: 400px;
+                height: 400px;
+                transition: transform 2s linear;
+            }
+
+            #brand3:hover {
+                transform: translateY(-10px);
+            }
+        }
+
+        #product {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: -120px;
+
+            #product1 {
+                width: 400px;
+                transition: transform 2s linear;
+            }
+
+            #product1:hover {
+                transform: translateY(-10px);
+            }
+
+            #product2 {
+                width: 400px;
+                transition: transform 2s linear;
+            }
+
+            #product2:hover {
+                transform: translateY(-10px);
+            }
+
+            #product3 {
+                width: 400px;
+                transition: transform 2s linear;
+            }
+
+            #product3:hover {
+                transform: translateY(-10px);
+            }
+
+            #product4 {
+                width: 400px;
+                transition: transform 2s linear;
+            }
+
+            #product4:hover {
+                transform: translateY(-10px);
+            }
+        }
+    }
+}
+
+#home7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    #t {
+        font-size: 50px;
+        color: #052b658c;
+        border-bottom: 2px black solid;
+    }
+
+    #t::after {
+        content: "";
+        border: 3px rgb(0, 183, 255) solid;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #ne {
+        font-size: 22px;
+        color: gray;
+    }
+
+    #main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        #door {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+
+            #door1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+                box-shadow: 0px 5px 25px rgb(196, 196, 196);
+                padding: 60px 20px;
+                border-radius: 8px;
+                transition: transform 2s linear;
+
+                #pic1 {
+                    width: 220px;
+                    border-radius: 50%;
+                }
+
+                #room {
+                    #w {
+                        font-size: 25px;
+                        color: #37517e;
+                    }
+
+                    #cheif {
+                        font-size: 20px;
+                        color: gray;
+                    }
+
+                    #do {
+                        font-size: 18px;
+                        width: 400px;
+                    }
+
+                    #icons {
+                        font-size: 20px;
+                        padding: 18px 0px;
+
+                        #icon {
+                            padding: 10px;
+                            border-radius: 50%;
+                            background-color: rgba(211, 211, 211, 0.167);
+                        }
+
+                        #icon:hover {
+                            background-color: rgb(0, 183, 255);
+                        }
+                    }
+                }
+            }
+
+            #door1:hover {
+                transform: translateY(-10px);
+            }
+
+            #door2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+                box-shadow: 0px 5px 25px rgb(196, 196, 196);
+                padding: 60px 20px;
+                border-radius: 8px;
+                transition: transform 3s linear;
+
+                #pic2 {
+                    width: 220px;
+                    border-radius: 50%;
+                }
+
+                #room1 {
+                    #s {
+                        font-size: 25px;
+                        color: #37517e;
+                    }
+
+                    #product {
+                        font-size: 20px;
+                        color: gray;
+                    }
+
+                    #aut {
+                        font-size: 18px;
+                        width: 400px;
+                    }
+
+                    #icon1 {
+                        font-size: 20px;
+                        padding: 18px 0px;
+
+                        #icon {
+                            padding: 10px;
+                            border-radius: 50%;
+                            background-color: rgba(211, 211, 211, 0.167);
+                        }
+
+                        #icon:hover {
+                            background-color: rgb(0, 183, 255);
+                        }
+                    }
+                }
+            }
+
+            #door2:hover {
+                transform: translateY(-10px);
+            }
+        }
+
+        #sub_door {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+
+            #door5 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+                box-shadow: 0px 5px 25px rgb(196, 196, 196);
+                padding: 60px 20px;
+                border-radius: 8px;
+                transition: transform 3s linear;
+
+                #pic3 {
+                    width: 220px;
+                    border-radius: 50%;
+                }
+
+                #room2 {
+                    #william {
+                        font-size: 25px;
+                        color: #37517e;
+                    }
+
+                    #cto {
+                        font-size: 20px;
+                        color: gray;
+                    }
+
+                    #q {
+                        font-size: 18px;
+                        width: 400px;
+                    }
+
+                    #icon2 {
+                        font-size: 20px;
+                        padding: 18px 0px;
+
+                        #icon {
+                            padding: 10px;
+                            border-radius: 50%;
+                            background-color: rgba(211, 211, 211, 0.167);
+                        }
+
+                        #icon:hover {
+                            background-color: rgb(0, 183, 255);
+                        }
+                    }
+                }
+            }
+
+            #door5:hover {
+                transform: translateY(-10px);
+            }
+
+            #door4 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+                box-shadow: 0px 5px 25px rgb(196, 196, 196);
+                padding: 60px 20px;
+                border-radius: 8px;
+                transition: transform 3s linear;
+
+                #pic4 {
+                    width: 220px;
+                    border-radius: 50%;
+                }
+
+                #room3 {
+                    #Amanda {
+                        font-size: 25px;
+                        color: #37517e;
+                    }
+
+                    #Accountant {
+                        font-size: 20px;
+                        color: gray;
+                    }
+
+                    #Dolorum {
+                        font-size: 18px;
+                        width: 400px;
+                    }
+
+                    #icon3 {
+                        font-size: 20px;
+                        padding: 18px 0px;
+
+                        #icon {
+                            padding: 10px;
+                            border-radius: 50%;
+                            background-color: rgba(211, 211, 211, 0.167);
+                        }
+
+                        #icon:hover {
+                            background-color: rgb(0, 183, 255);
+                        }
+                    }
+                }
+            }
+
+            #door4:hover {
+                transform: translateY(-10px);
+            }
+        }
+    }
+}
+
+#home8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+    background-color: #f5f6f8;
+    width: 100%;
+    padding: 40px;
+
+    #door1 {
+        font-size: 50px;
+        color: #052b658c;
+        border-bottom: 2px black solid;
+    }
+
+    #door1::after {
+        content: "";
+        border: 3px rgb(0, 183, 255) solid;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #door2 {
+        font-size: 22px;
+        color: gray;
+    }
+
+    #door6 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        #room1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 20px;
+            box-shadow: 0px 5px 25px rgb(196, 196, 196);
+            padding: 53px 35px;
+            border-radius: 8px;
+
+            #free {
+                font-size: 30px;
+                color: #052b658c;
+
+            }
+
+            #dollar {
+                font-size: 18px;
+                color: gray;
+
+                .small {
+                    font-size: 35px;
+                    color: rgb(0, 183, 255);
+                }
+            }
+
+            #q {
+                font-size: 18px;
+                color: gray;
+            }
+
+            #line {
+                font-size: 18px;
+                color: gray;
+                margin-left: 6px;
+                text-decoration: line-through;
+
+                .symbol {
+                    margin-right: 15px;
+                    font-size: 20px;
+                    text-decoration: none;
+                }
+            }
+
+            #buy {
+                font-size: 24px;
+                color: rgb(0, 183, 255);
+                padding: 5px 30px;
+                border-radius: 30px;
+                border: 2px rgb(51, 171, 218) solid;
+            }
+
+            #buy:hover {
+                background-color: rgb(0, 181, 252);
+                color: white;
+            }
+        }
+
+        #room2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 20px;
+            box-shadow: 0px 5px 25px rgb(196, 196, 196);
+            padding: 60px 35px;
+            border-radius: 8px;
+
+            #business {
+                font-size: 30px;
+                color: #052b658c;
+
+            }
+
+            #dollar1 {
+                font-size: 18px;
+                color: gray;
+
+                .small1 {
+                    font-size: 35px;
+                    color: rgb(0, 183, 255);
+                }
+            }
+
+            #Quam {
+                font-size: 18px;
+                color: gray;
+            }
+
+            #Nec {
+                font-size: 18px;
+                color: gray;
+            }
+
+            #at1 {
+                font-size: 18px;
+                color: gray;
+            }
+
+            #p1 {
+                font-size: 18px;
+                color: gray;
+            }
+
+            #m1 {
+                font-size: 18px;
+                color: gray;
+            }
+
+            #buy {
+                font-size: 24px;
+                color: rgb(0, 183, 255);
+                padding: 5px 30px;
+                border-radius: 30px;
+                border: 2px rgb(51, 171, 218) solid;
+                background-color: rgb(0, 183, 255);
+                color: white;
+            }
+        }
+
+        #room3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 20px;
+            box-shadow: 0px 5px 25px rgb(196, 196, 196);
+            padding: 60px 35px;
+            border-radius: 8px;
+
+            #developer {
+                font-size: 30px;
+                color: #052b658c;
+
+            }
+
+            #dollar2 {
+                font-size: 18px;
+                color: gray;
+
+                .small2 {
+                    font-size: 35px;
+                    color: rgb(0, 183, 255);
+                }
+            }
+
+            #Quam1 {
+                font-size: 18px;
+                color: gray;
+            }
+
+            #Nec2 {
+                font-size: 18px;
+                color: gray;
+            }
+
+            #at2 {
+                font-size: 18px;
+                color: gray;
+            }
+
+            #p2 {
+                font-size: 18px;
+                color: gray;
+            }
+
+            #m2 {
+                font-size: 18px;
+                color: gray;
+            }
+
+            #buy {
+                font-size: 24px;
+                color: rgb(0, 183, 255);
+                padding: 5px 30px;
+                border-radius: 30px;
+                border: 2px rgb(51, 171, 218) solid;
+            }
+
+            #buy:hover {
+                background-color: rgb(0, 181, 252);
+                color: white;
+            }
+        }
+    }
+}
+
+#home9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+    width: 100%;
+    padding: 40px;
+
+    #door7 {
+        font-size: 50px;
+        color: #052b658c;
+        border-bottom: 2px black solid;
+    }
+
+    #door7::after {
+        content: "";
+        border: 3px rgb(0, 183, 255) solid;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #door8 {
+        font-size: 22px;
+        color: gray;
+    }
+
+    .carousel-indicators {
+        /* background-color: black;*/
+    }
+
+    .carousel-indicators .active {
+        background-color: #007bff;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        background-color: red;
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+    }
+}
+
+#home10 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 60px;
+    background-color: #f5f6f8;
+
+    #door10 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 30px;
+
+        #f {
+            font-size: 55px;
+            border-bottom: 2px black solid;
+        }
+
+        #f::after {
+            content: " ";
+            border: 3px rgb(0, 183, 255) solid;
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #magnam {
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+
+    #accordionPanelsStayOpenExample {
+        .accordion-item {
+            margin-bottom: 30px;
+            box-shadow: 0px 5px 25px gray;
+
+            h2 button {
+                border: none;
+                outline: none;
+                box-shadow: none;
+                color: #37517e;
+                font-size: 18px;
+                margin-bottom: 0;
+                border-bottom: none;
+
+                #color {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 14px;
+
+                    i {
+                        border: 2px rgb(0, 180, 252) solid;
+                        border-radius: 50%;
+                        padding: 5px;
+                        color: rgb(0, 183, 255);
+                    }
+                }
+            }
+
+            button:hover {
+                color: rgb(0, 177, 247);
+            }
+
+            .accordion-button:not(.collapsed) {
+                color: rgb(0, 177, 248);
+            }
+        }
+    }
+}
+
+#home11 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+
+    #Contact {
+        font-size: 50px;
+        color: #052b658c;
+        border-bottom: 2px black solid;
+    }
+
+    #Contact::after {
+        content: "";
+        border: 3px rgb(0, 183, 255) solid;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #fuga {
+        font-size: 22px;
+        color: gray;
+    }
+
+    #door11 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        padding: 15px;
+
+        #window1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 25px;
+            box-shadow: 0px 5px 25px rgb(196, 196, 196);
+            padding: 60px 35px;
+            border-radius: 8px;
+
+
+            #address {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+                i {
+                    padding: 13px;
+                    background-color: rgba(172, 218, 236, 0.623);
+                    border-radius: 50%;
+                }
+
+                #add {
+                    font-size: 20px;
+                    color: #052b65;
+                }
+            }
+
+            #call {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+                i {
+                    padding: 13px;
+                    background-color: rgba(172, 218, 236, 0.623);
+                    border-radius: 50%;
+                }
+
+                #us {
+                    font-size: 20px;
+                    color: #052b65;
+                }
+            }
+
+            #email {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+                i {
+                    padding: 13px;
+                    background-color: rgba(172, 218, 236, 0.623);
+                    border-radius: 50%;
+                }
+
+                #mail {
+                    font-size: 20px;
+                    color: #052b65;
+                }
+            }
+
+            #map {
+                width: 500px;
+            }
+        }
+
+        #window2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0px 5px 25px rgb(196, 196, 196);
+            padding: 60px 35px;
+            border-radius: 8px;
+
+            #name {
+                font-size: 20px;
+                width: 700px;
+            }
+
+            #email {
+                font-size: 20px;
+                width: 700px;
+            }
+
+            #subject {
+                font-size: 20px;
+                width: 700px;
+            }
+
+            #message {
+                font-size: 20px;
+                width: 700px;
+            }
+
+            #sub {
+                padding: 10px 40px;
+                font-size: 20px;
+                background-color: rgb(0, 183, 255);
+                border-radius: 50px;
+                border: none;
+            }
+
+            #sub:hover {
+                background-color: skyblue;
+            }
+        }
+
+    }
+
+}
+
+#home12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 70px;
+    background-color: #dedfe1a3;
+    width: 100%;
+
+    #join {
+        font-size: 27px;
+        color: #011b41;
+    }
+
+    #subseribe {
+        font-size: 20px;
+    }
+
+    #button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+
+        #s {
+            width: 600px;
+            height: 45px;
+            border-radius: 50px;
+            box-shadow: 0px 5px 25px gray;
+            border: none;
+        }
+
+        #sub2 {
+            font-size: 22px;
+            padding: 6px 25px;
+            border-radius: 50px;
+            background-color: rgb(0, 183, 255);
+            color: white;
+            border: none;
+            margin-left: -40px;
+        }
+    }
+}
+
+#home13 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    padding: 50px 0px;
+
+    #arsha {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 10px;
+
+        #name {
+            font-size: 28px;
+            font-weight: bold;
+            color: #052b65;
+        }
+
+        #ad1 {
+            font-size: 17px;
+        }
+    }
+
+    #arsha1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        gap: 70px;
+
+        #useful {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 10px;
+
+            #Links {
+                font-size: 20px;
+                color: #052b65;
+            }
+
+            #Usefuls {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 7px;
+
+                #ho {
+                    font-size: 16px;
+                }
+
+                #ho:hover {
+                    color: rgb(0, 183, 255);
+                }
+
+                #about {
+                    font-size: 16px;
+                }
+
+                #about:hover {
+                    color: rgb(0, 183, 255);
+                }
+
+                #services {
+                    font-size: 16px;
+                }
+
+                #services:hover {
+                    color: rgb(0, 183, 255);
+                }
+
+                #terms {
+                    font-size: 16px;
+                }
+
+                #terms:hover {
+                    color: rgb(0, 183, 255);
+                }
+            }
+        }
+
+        #our {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 10px;
+
+            #ser {
+                font-size: 20px;
+                color: #052b65;
+            }
+
+            #Our_Services {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 7px;
+
+                #web {
+                    font-size: 16px;
+                }
+
+                #web:hover {
+                    color: rgb(0, 183, 255);
+                }
+
+                #dev {
+                    font-size: 16px;
+                }
+
+                #dev:hover {
+                    color: rgb(0, 183, 255);
+                }
+
+                #product {
+                    font-size: 16px;
+                }
+
+                #product:hover {
+                    color: rgb(0, 183, 255);
+                }
+
+                #marketing {
+                    font-size: 16px;
+                }
+
+                #marketing:hover {
+                    color: rgb(0, 183, 255);
+                }
+            }
+        }
+
+        #follow {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 10px;
+
+            #us {
+                font-size: 20px;
+                color: #052b65;
+            }
+
+            #cras {
+                font-size: 16px;
+            }
+
+            #frames {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: start;
+                gap: 10px;
+
+                #icon {
+                    font-size: 20px;
+                    padding: 12px;
+                    border-radius: 50%;
+                    border: 1px solid;
+                }
+            }
+
+            #icon:hover {
+                color: rgb(0, 183, 255);
+                border-color: #052c65;
+            }
+
+        }
+    }
+}
+
+#home14 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes progressbar {
+    from {
+        opacity: 0;
+        clip-path: inset(0 100% 0 0);
+    }
+
+    to {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+
+}
+
+.progress {
+    animation: progressbar linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes slide {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+
+}
+
+.logo_icons {
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes room1 {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+
+}
+
+#home1 {
+    animation: room1 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes door1 {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+}
+
+#door1 {
+    animation: door1 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes door2 {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+}
+
+#home2 {
+    animation: door2 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes door2 {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+}
+
+#home2 {
+    animation: door2 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes door2 {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+}
+
+#home3 {
+    animation: door2 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes door2 {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+}
+
+#door2 {
+    animation: door2 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes card {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+}
+
+#card {
+    animation: card linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes actoin {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+}
+
+#home5 {
+    animation: action linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes door {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+}
+
+#door {
+    animation: door linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes sub_door {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+}
+
+#sub_door {
+    animation: sub_door linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes t {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+}
+
+#t {
+    animation: t linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes ne {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+}
+
+#ne {
+    animation: ne linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes door6 {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+}
+
+#door6 {
+    animation: door6 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes door7 {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+}
+
+#door7 {
+    animation: door7 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes door8 {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+}
+
+#door8 {
+    animation: door8 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes carousel-inner {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+}
+
+.carousel-inner {
+    animation: carousel-inner linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes f {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+}
+
+#f {
+    animation: f linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes magnam {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+}
+
+#magnam {
+    animation: magnam linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes accordion-item {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+}
+
+.accordion-item {
+    animation: accordion-item linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes Contact {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+}
+
+#Contact {
+    animation: Contact linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes fuga {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+}
+
+#fuga {
+    animation: fuga linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes door11 {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+}
+
+#door11 {
+    animation: door11 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes home12 {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+        transform: scale(1);
+    }
+}
+
+#home12 {
+    animation: home12 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+
+
+
+
+
+
+@media(min-width:0px)and(max-width:480px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navBar {
+        width: 100%;
+        /* margin-top: -6px; */
+        background-color: #4668a2;
+        padding: 20px;
+
+
+        .navbar-brand {
+            font-size: 30px;
+            color: aquamarine;
+            font-weight: bold;
+        }
+
+        #navbarSupportedContent {
+            * {
+                font-size: 18px;
+                color: aliceblue;
+            }
+
+            ul>li>a:hover {
+                color: #47b2e4;
+            }
+        }
+
+        #navbarSupportedContent:hover {
+            .a:hover {
+                color: #47b2e4;
+            }
+        }
+
+        .navbar-toggler {
+            border: none;
+            box-shadow: none;
+
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            }
+        }
+    }
+
+    #btn {
+        border-radius: 50px;
+        background-color: skyblue;
+        padding: 9px 18px 9px 18px;
+        border: none;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        background-color: #4668a2;
+        width: 100%;
+
+        #bar {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 30px;
+            width: 550px;
+
+            #better {
+                font-size: 50px;
+                font-weight: bold;
+                color: white;
+            }
+
+            #we {
+                font-size: 28px;
+                font-style: italic;
+                color: white;
+
+            }
+
+            #button {
+                display: flex;
+                flex-direction: row;
+                gap: 18px;
+
+                #get {
+                    background-color: rgb(0, 183, 255);
+                    padding: 10px 16px 10px 16px;
+                    font-size: 20px;
+                    border-radius: 50px;
+                    color: white;
+                    border: none;
+                }
+
+                #video {
+                    font-size: 23px;
+
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        text-decoration: none;
+                        color: white;
+                        padding: 10px 16px 10px 16px;
+
+                        .icon {
+                            font-size: 28px;
+
+                        }
+                    }
+                }
+
+                #video:hover {
+                    #icon:hover {
+                        color: #47b2e4;
+                    }
+                }
+            }
+
+        }
+
+        #bar1 {}
+
+    }
+
+    #pic {
+        width: 700px;
+        margin-top: 20px;
+        animation: animate 3s alternate infinite;
+    }
+
+    @keyframes animate {
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-20px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    .logo_icons {
+        background-color: rgba(128, 128, 128, 0.285);
+    }
+
+    .slick-slide {
+        margin: 25px 90px;
+    }
+
+    #home1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding-bottom: 70px;
+        margin-top: 50px;
+
+        #room1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: gray;
+            border-bottom: 2px black solid;
+        }
+
+        #room1::after {
+            content: "";
+            border: 3px rgb(0, 183, 255) solid;
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+
+        #room2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 80px;
+            font-size: 18px;
+            padding: 20px;
+
+            #door1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 10px;
+                width: 700px;
+            }
+
+            #door2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 20px;
+                width: 680px;
+
+                #read {
+                    background-color: white;
+                    border-radius: 15px;
+                    color: rgb(0, 183, 255);
+                    font-size: 18px;
+                    padding: 10px 20px 10px 20px;
+                }
+
+                #read:hover {
+                    background-color: rgb(0, 183, 255);
+                    color: white;
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    #home2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 60px;
+        gap: 40px;
+        background-color: rgba(128, 128, 128, 0.159);
+
+        #door1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 20px;
+
+            #e {
+                font-size: 40px;
+            }
+
+            #lorem {
+                font-size: 18px;
+
+            }
+
+            #accordionPanelsStayOpenExample {
+                .accordion-item {
+                    margin-bottom: 30px;
+                    box-shadow: 0px 5px 25px rgb(128, 128, 128);
+
+                    h2 button {
+                        border: none;
+                        outline: none;
+                        box-shadow: none;
+                        color: #37517e;
+                        font-size: 18px;
+                        margin-bottom: 0;
+                        border-bottom: none;
+                    }
+
+                    button:hover {
+                        color: rgb(0, 177, 247);
+                    }
+
+                    .accordion-button:not(.collapsed) {
+                        color: rgb(0, 177, 248);
+                    }
+
+                    .accordion-collapse .accordion-body {
+                        margin-top: 0;
+                        padding-top: 0;
+                    }
+
+                }
+            }
+        }
+
+        #door2 {
+            #photo {
+                width: 500px;
+            }
+        }
+    }
+
+    #home3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+
+        #door1 {
+            #pic1 {
+                width: 650px;
+                padding: 40px;
+            }
+        }
+
+        #door2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 20px;
+
+            #v {
+                font-size: 40px;
+                color: #052c65;
+            }
+
+            #l1 {
+                font-size: 18px;
+                color: gray;
+                font-style: italic;
+            }
+
+            #name {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 600px;
+
+                #tech {
+                    font-size: 15px;
+                    color: #37517e;
+                    font-weight: bold;
+                }
+            }
+
+            #name1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 620px;
+
+                #tech {
+                    font-size: 15px;
+                    color: #37517e;
+                    font-weight: bold;
+                }
+            }
+
+            #name2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 560px;
+
+                #tech {
+                    font-size: 15px;
+                    color: #37517e;
+                    font-weight: bold;
+                }
+            }
+
+            #name3 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 560px;
+
+                #tech {
+                    font-size: 15px;
+                    color: #37517e;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    #home4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        background-color: #f5f6f8;
+        padding: 30px;
+        width: 100%;
+
+        #door1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            color: #37517e;
+            font-weight: bold;
+            border-bottom: 2px black solid;
+        }
+
+        #door1::after {
+            content: "";
+            border: 3px rgb(0, 183, 255) solid;
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #door2 {
+            font-size: 18px;
+            color: gray;
+        }
+
+        #card {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+
+            #icon {
+                font-size: 30px;
+                color: rgb(0, 181, 252);
+            }
+
+            #card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 15px;
+                box-shadow: 0px 5px 25px rgb(196, 196, 196);
+                padding: 60px 20px;
+                border-radius: 8px;
+                transition: transform 3s linear;
+
+                #lo {
+                    font-size: 22px;
+                    color: #052c65;
+                }
+
+                #para {
+                    font-size: 18px;
+                    width: 280px;
+                }
+            }
+
+            #card-body:hover {
+                transform: translateY(-5px);
+                transition: linear;
+
+                #lo {
+                    color: rgb(0, 183, 255);
+                }
+            }
+
+        }
+    }
+
+    #home5 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 170px;
+        background-image: url(https://bootstrapmade.com/content/demo/Arsha/assets/img/cta-bg.jpg);
+        margin-top: 40px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 500px;
+
+        #door1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 23px;
+            color: white;
+
+            #call {
+                font-size: 40px;
+            }
+
+            #do {
+                width: 950px;
+                font-size: 20px;
+            }
+        }
+
+        #door2 {
+            #action {
+                font-size: 25px;
+                padding: 13px 35px;
+                border-radius: 50px;
+                background: none;
+                color: white;
+                border: 2px white solid;
+            }
+
+            #action:hover {
+                background-color: rgb(0, 183, 255);
+                border: none;
+            }
+        }
+    }
+
+    #home6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+
+        #door {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+
+            #port {
+                font-size: 50px;
+                color: #37517e;
+                border-bottom: 2px black solid;
+            }
+
+            #port::after {
+                content: "";
+                border: 3px rgb(0, 183, 255) solid;
+                width: 50%;
+                display: block;
+                margin: 0 auto;
+            }
+
+            #n {
+                font-size: 22px;
+                color: gray;
+            }
+
+            #buttons {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+
+                #al {
+                    font-size: 18px;
+                    padding: 10px 25px;
+                    border-radius: 30px;
+                    border: none;
+                    background-color: #2980b9;
+                }
+            }
+
+
+            #all {
+                font-size: 18px;
+                padding: 10px 25px;
+                border-radius: 30px;
+                border: none;
+                background: none;
+            }
+
+            #all:hover {
+                background-color: #2980b9;
+            }
+        }
+
+        #sub_door {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            margin-top: 90px;
+
+            #Apps {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                margin-top: -90px;
+
+                #app1 {
+                    width: 500px;
+                    transition: transform 2s linear;
+                }
+
+                #app1:hover {
+                    transform: translateY(-10px);
+                }
+
+                #app2 {
+                    width: 500px;
+                    height: 600px;
+                    transition: transform 2s linear;
+                }
+
+                #app2:hover {
+                    transform: translateY(-10px);
+                }
+            }
+
+            #branding {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+                #brand1 {
+                    width: 400px;
+                    transition: transform 2s linear;
+                }
+
+                #brand1:hover {
+                    transform: translateY(-10px);
+                }
+
+                #brand2 {
+                    width: 400px;
+                    height: 500px;
+                    transition: transform 2s linear;
+                }
+
+                #brand2:hover {
+                    transform: translateY(-10px);
+                }
+
+                #brand3 {
+                    width: 400px;
+                    height: 400px;
+                    transition: transform 2s linear;
+                }
+
+                #brand3:hover {
+                    transform: translateY(-10px);
+                }
+            }
+
+            #product {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                margin-top: -120px;
+
+                #product1 {
+                    width: 400px;
+                    transition: transform 2s linear;
+                }
+
+                #product1:hover {
+                    transform: translateY(-10px);
+                }
+
+                #product2 {
+                    width: 400px;
+                    transition: transform 2s linear;
+                }
+
+                #product2:hover {
+                    transform: translateY(-10px);
+                }
+
+                #product3 {
+                    width: 400px;
+                    transition: transform 2s linear;
+                }
+
+                #product3:hover {
+                    transform: translateY(-10px);
+                }
+
+                #product4 {
+                    width: 400px;
+                    transition: transform 2s linear;
+                }
+
+                #product4:hover {
+                    transform: translateY(-10px);
+                }
+            }
+        }
+    }
+
+    #home7 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        #t {
+            font-size: 50px;
+            color: #052b658c;
+            border-bottom: 2px black solid;
+        }
+
+        #t::after {
+            content: "";
+            border: 3px rgb(0, 183, 255) solid;
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #ne {
+            font-size: 22px;
+            color: gray;
+        }
+
+        #main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            #door {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+
+                #door1 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 25px;
+                    box-shadow: 0px 5px 25px rgb(196, 196, 196);
+                    padding: 60px 20px;
+                    border-radius: 8px;
+                    transition: transform 2s linear;
+
+                    #pic1 {
+                        width: 220px;
+                        border-radius: 50%;
+                    }
+
+                    #room {
+                        #w {
+                            font-size: 25px;
+                            color: #37517e;
+                        }
+
+                        #cheif {
+                            font-size: 20px;
+                            color: gray;
+                        }
+
+                        #do {
+                            font-size: 18px;
+                            width: 400px;
+                        }
+
+                        #icons {
+                            font-size: 20px;
+                            padding: 18px 0px;
+
+                            #icon {
+                                padding: 10px;
+                                border-radius: 50%;
+                                background-color: rgba(211, 211, 211, 0.167);
+                            }
+
+                            #icon:hover {
+                                background-color: rgb(0, 183, 255);
+                            }
+                        }
+                    }
+                }
+
+                #door1:hover {
+                    transform: translateY(-10px);
+                }
+
+                #door2 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 25px;
+                    box-shadow: 0px 5px 25px rgb(196, 196, 196);
+                    padding: 60px 20px;
+                    border-radius: 8px;
+                    transition: transform 3s linear;
+
+                    #pic2 {
+                        width: 220px;
+                        border-radius: 50%;
+                    }
+
+                    #room1 {
+                        #s {
+                            font-size: 25px;
+                            color: #37517e;
+                        }
+
+                        #product {
+                            font-size: 20px;
+                            color: gray;
+                        }
+
+                        #aut {
+                            font-size: 18px;
+                            width: 400px;
+                        }
+
+                        #icon1 {
+                            font-size: 20px;
+                            padding: 18px 0px;
+
+                            #icon {
+                                padding: 10px;
+                                border-radius: 50%;
+                                background-color: rgba(211, 211, 211, 0.167);
+                            }
+
+                            #icon:hover {
+                                background-color: rgb(0, 183, 255);
+                            }
+                        }
+                    }
+                }
+
+                #door2:hover {
+                    transform: translateY(-10px);
+                }
+            }
+
+            #sub_door {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+
+                #door5 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 25px;
+                    box-shadow: 0px 5px 25px rgb(196, 196, 196);
+                    padding: 60px 20px;
+                    border-radius: 8px;
+                    transition: transform 3s linear;
+
+                    #pic3 {
+                        width: 220px;
+                        border-radius: 50%;
+                    }
+
+                    #room2 {
+                        #william {
+                            font-size: 25px;
+                            color: #37517e;
+                        }
+
+                        #cto {
+                            font-size: 20px;
+                            color: gray;
+                        }
+
+                        #q {
+                            font-size: 18px;
+                            width: 400px;
+                        }
+
+                        #icon2 {
+                            font-size: 20px;
+                            padding: 18px 0px;
+
+                            #icon {
+                                padding: 10px;
+                                border-radius: 50%;
+                                background-color: rgba(211, 211, 211, 0.167);
+                            }
+
+                            #icon:hover {
+                                background-color: rgb(0, 183, 255);
+                            }
+                        }
+                    }
+                }
+
+                #door5:hover {
+                    transform: translateY(-10px);
+                }
+
+                #door4 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 25px;
+                    box-shadow: 0px 5px 25px rgb(196, 196, 196);
+                    padding: 60px 20px;
+                    border-radius: 8px;
+                    transition: transform 3s linear;
+
+                    #pic4 {
+                        width: 220px;
+                        border-radius: 50%;
+                    }
+
+                    #room3 {
+                        #Amanda {
+                            font-size: 25px;
+                            color: #37517e;
+                        }
+
+                        #Accountant {
+                            font-size: 20px;
+                            color: gray;
+                        }
+
+                        #Dolorum {
+                            font-size: 18px;
+                            width: 400px;
+                        }
+
+                        #icon3 {
+                            font-size: 20px;
+                            padding: 18px 0px;
+
+                            #icon {
+                                padding: 10px;
+                                border-radius: 50%;
+                                background-color: rgba(211, 211, 211, 0.167);
+                            }
+
+                            #icon:hover {
+                                background-color: rgb(0, 183, 255);
+                            }
+                        }
+                    }
+                }
+
+                #door4:hover {
+                    transform: translateY(-10px);
+                }
+            }
+        }
+    }
+
+    #home8 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-top: 50px;
+        background-color: #f5f6f8;
+        width: 100%;
+        padding: 40px;
+
+        #door1 {
+            font-size: 50px;
+            color: #052b658c;
+            border-bottom: 2px black solid;
+        }
+
+        #door1::after {
+            content: "";
+            border: 3px rgb(0, 183, 255) solid;
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #door2 {
+            font-size: 22px;
+            color: gray;
+        }
+
+        #door6 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+
+            #room1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 20px;
+                box-shadow: 0px 5px 25px rgb(196, 196, 196);
+                padding: 53px 35px;
+                border-radius: 8px;
+
+                #free {
+                    font-size: 30px;
+                    color: #052b658c;
+
+                }
+
+                #dollar {
+                    font-size: 18px;
+                    color: gray;
+
+                    .small {
+                        font-size: 35px;
+                        color: rgb(0, 183, 255);
+                    }
+                }
+
+                #q {
+                    font-size: 18px;
+                    color: gray;
+                }
+
+                #line {
+                    font-size: 18px;
+                    color: gray;
+                    margin-left: 6px;
+                    text-decoration: line-through;
+
+                    .symbol {
+                        margin-right: 15px;
+                        font-size: 20px;
+                        text-decoration: none;
+                    }
+                }
+
+                #buy {
+                    font-size: 24px;
+                    color: rgb(0, 183, 255);
+                    padding: 5px 30px;
+                    border-radius: 30px;
+                    border: 2px rgb(51, 171, 218) solid;
+                }
+
+                #buy:hover {
+                    background-color: rgb(0, 181, 252);
+                    color: white;
+                }
+            }
+
+            #room2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 20px;
+                box-shadow: 0px 5px 25px rgb(196, 196, 196);
+                padding: 60px 35px;
+                border-radius: 8px;
+
+                #business {
+                    font-size: 30px;
+                    color: #052b658c;
+
+                }
+
+                #dollar1 {
+                    font-size: 18px;
+                    color: gray;
+
+                    .small1 {
+                        font-size: 35px;
+                        color: rgb(0, 183, 255);
+                    }
+                }
+
+                #Quam {
+                    font-size: 18px;
+                    color: gray;
+                }
+
+                #Nec {
+                    font-size: 18px;
+                    color: gray;
+                }
+
+                #at1 {
+                    font-size: 18px;
+                    color: gray;
+                }
+
+                #p1 {
+                    font-size: 18px;
+                    color: gray;
+                }
+
+                #m1 {
+                    font-size: 18px;
+                    color: gray;
+                }
+
+                #buy {
+                    font-size: 24px;
+                    color: rgb(0, 183, 255);
+                    padding: 5px 30px;
+                    border-radius: 30px;
+                    border: 2px rgb(51, 171, 218) solid;
+                    background-color: rgb(0, 183, 255);
+                    color: white;
+                }
+            }
+
+            #room3 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 20px;
+                box-shadow: 0px 5px 25px rgb(196, 196, 196);
+                padding: 60px 35px;
+                border-radius: 8px;
+
+                #developer {
+                    font-size: 30px;
+                    color: #052b658c;
+
+                }
+
+                #dollar2 {
+                    font-size: 18px;
+                    color: gray;
+
+                    .small2 {
+                        font-size: 35px;
+                        color: rgb(0, 183, 255);
+                    }
+                }
+
+                #Quam1 {
+                    font-size: 18px;
+                    color: gray;
+                }
+
+                #Nec2 {
+                    font-size: 18px;
+                    color: gray;
+                }
+
+                #at2 {
+                    font-size: 18px;
+                    color: gray;
+                }
+
+                #p2 {
+                    font-size: 18px;
+                    color: gray;
+                }
+
+                #m2 {
+                    font-size: 18px;
+                    color: gray;
+                }
+
+                #buy {
+                    font-size: 24px;
+                    color: rgb(0, 183, 255);
+                    padding: 5px 30px;
+                    border-radius: 30px;
+                    border: 2px rgb(51, 171, 218) solid;
+                }
+
+                #buy:hover {
+                    background-color: rgb(0, 181, 252);
+                    color: white;
+                }
+            }
+        }
+    }
+
+    #home9 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: 50px;
+        width: 100%;
+        padding: 40px;
+
+        #door7 {
+            font-size: 50px;
+            color: #052b658c;
+            border-bottom: 2px black solid;
+        }
+
+        #door7::after {
+            content: "";
+            border: 3px rgb(0, 183, 255) solid;
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #door8 {
+            font-size: 22px;
+            color: gray;
+        }
+
+        .carousel-indicators {
+            /* background-color: black;*/
+        }
+
+        .carousel-indicators .active {
+            background-color: #007bff;
+        }
+
+        .carousel-indicators [data-bs-target] {
+            background-color: red;
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+        }
+    }
+
+    #home10 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        gap: 60px;
+        background-color: #f5f6f8;
+
+        #door10 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 30px;
+
+            #f {
+                font-size: 55px;
+                border-bottom: 2px black solid;
+            }
+
+            #f::after {
+                content: " ";
+                border: 3px rgb(0, 183, 255) solid;
+                width: 50%;
+                display: block;
+                margin: 0 auto;
+            }
+
+            #magnam {
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+
+        #accordionPanelsStayOpenExample {
+            .accordion-item {
+                margin-bottom: 30px;
+                box-shadow: 0px 5px 25px gray;
+
+                h2 button {
+                    border: none;
+                    outline: none;
+                    box-shadow: none;
+                    color: #37517e;
+                    font-size: 18px;
+                    margin-bottom: 0;
+                    border-bottom: none;
+
+                    #color {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 14px;
+
+                        i {
+                            border: 2px rgb(0, 180, 252) solid;
+                            border-radius: 50%;
+                            padding: 5px;
+                            color: rgb(0, 183, 255);
+                        }
+                    }
+                }
+
+                button:hover {
+                    color: rgb(0, 177, 247);
+                }
+
+                .accordion-button:not(.collapsed) {
+                    color: rgb(0, 177, 248);
+                }
+            }
+        }
+    }
+
+    #home11 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 40px;
+
+        #Contact {
+            font-size: 50px;
+            color: #052b658c;
+            border-bottom: 2px black solid;
+        }
+
+        #Contact::after {
+            content: "";
+            border: 3px rgb(0, 183, 255) solid;
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #fuga {
+            font-size: 22px;
+            color: gray;
+        }
+
+        #door11 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            padding: 15px;
+
+            #window1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 25px;
+                box-shadow: 0px 5px 25px rgb(196, 196, 196);
+                padding: 60px 35px;
+                border-radius: 8px;
+
+
+                #address {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+
+                    i {
+                        padding: 13px;
+                        background-color: rgba(172, 218, 236, 0.623);
+                        border-radius: 50%;
+                    }
+
+                    #add {
+                        font-size: 20px;
+                        color: #052b65;
+                    }
+                }
+
+                #call {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+
+                    i {
+                        padding: 13px;
+                        background-color: rgba(172, 218, 236, 0.623);
+                        border-radius: 50%;
+                    }
+
+                    #us {
+                        font-size: 20px;
+                        color: #052b65;
+                    }
+                }
+
+                #email {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+
+                    i {
+                        padding: 13px;
+                        background-color: rgba(172, 218, 236, 0.623);
+                        border-radius: 50%;
+                    }
+
+                    #mail {
+                        font-size: 20px;
+                        color: #052b65;
+                    }
+                }
+
+                #map {
+                    width: 500px;
+                }
+            }
+
+            #window2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                box-shadow: 0px 5px 25px rgb(196, 196, 196);
+                padding: 60px 35px;
+                border-radius: 8px;
+
+                #name {
+                    font-size: 20px;
+                    width: 700px;
+                }
+
+                #email {
+                    font-size: 20px;
+                    width: 700px;
+                }
+
+                #subject {
+                    font-size: 20px;
+                    width: 700px;
+                }
+
+                #message {
+                    font-size: 20px;
+                    width: 700px;
+                }
+
+                #sub {
+                    padding: 10px 40px;
+                    font-size: 20px;
+                    background-color: rgb(0, 183, 255);
+                    border-radius: 50px;
+                    border: none;
+                }
+
+                #sub:hover {
+                    background-color: skyblue;
+                }
+            }
+
+        }
+
+    }
+
+    #home12 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        padding: 70px;
+        background-color: #dedfe1a3;
+        width: 100%;
+
+        #join {
+            font-size: 27px;
+            color: #011b41;
+        }
+
+        #subseribe {
+            font-size: 20px;
+        }
+
+        #button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+
+            #s {
+                width: 600px;
+                height: 45px;
+                border-radius: 50px;
+                box-shadow: 0px 5px 25px gray;
+                border: none;
+            }
+
+            #sub2 {
+                font-size: 22px;
+                padding: 6px 25px;
+                border-radius: 50px;
+                background-color: rgb(0, 183, 255);
+                color: white;
+                border: none;
+                margin-left: -40px;
+            }
+        }
+    }
+
+    #home13 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 200px;
+        padding: 50px 0px;
+
+        #arsha {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 10px;
+
+            #name {
+                font-size: 28px;
+                font-weight: bold;
+                color: #052b65;
+            }
+
+            #ad1 {
+                font-size: 17px;
+            }
+        }
+
+        #arsha1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+            gap: 70px;
+
+            #useful {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 10px;
+
+                #Links {
+                    font-size: 20px;
+                    color: #052b65;
+                }
+
+                #Usefuls {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    gap: 7px;
+
+                    #ho {
+                        font-size: 16px;
+                    }
+
+                    #ho:hover {
+                        color: rgb(0, 183, 255);
+                    }
+
+                    #about {
+                        font-size: 16px;
+                    }
+
+                    #about:hover {
+                        color: rgb(0, 183, 255);
+                    }
+
+                    #services {
+                        font-size: 16px;
+                    }
+
+                    #services:hover {
+                        color: rgb(0, 183, 255);
+                    }
+
+                    #terms {
+                        font-size: 16px;
+                    }
+
+                    #terms:hover {
+                        color: rgb(0, 183, 255);
+                    }
+                }
+            }
+
+            #our {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 10px;
+
+                #ser {
+                    font-size: 20px;
+                    color: #052b65;
+                }
+
+                #Our_Services {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    gap: 7px;
+
+                    #web {
+                        font-size: 16px;
+                    }
+
+                    #web:hover {
+                        color: rgb(0, 183, 255);
+                    }
+
+                    #dev {
+                        font-size: 16px;
+                    }
+
+                    #dev:hover {
+                        color: rgb(0, 183, 255);
+                    }
+
+                    #product {
+                        font-size: 16px;
+                    }
+
+                    #product:hover {
+                        color: rgb(0, 183, 255);
+                    }
+
+                    #marketing {
+                        font-size: 16px;
+                    }
+
+                    #marketing:hover {
+                        color: rgb(0, 183, 255);
+                    }
+                }
+            }
+
+            #follow {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 10px;
+
+                #us {
+                    font-size: 20px;
+                    color: #052b65;
+                }
+
+                #cras {
+                    font-size: 16px;
+                }
+
+                #frames {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: start;
+                    gap: 10px;
+
+                    #icon {
+                        font-size: 20px;
+                        padding: 12px;
+                        border-radius: 50%;
+                        border: 1px solid;
+                    }
+                }
+
+                #icon:hover {
+                    color: rgb(0, 183, 255);
+                    border-color: #052c65;
+                }
+
+            }
+        }
+    }
+
+    #home14 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @keyframes progressbar {
+        from {
+            opacity: 0;
+            clip-path: inset(0 100% 0 0);
+        }
+
+        to {
+            opacity: 1;
+            clip-path: inset(0 0 0 0);
+        }
+
+    }
+
+    .progress {
+        animation: progressbar linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes slide {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+
+    }
+
+    .logo_icons {
+        animation: slide linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes room1 {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+
+    }
+
+    #home1 {
+        animation: room1 linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes door1 {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+    }
+
+    #door1 {
+        animation: door1 linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes door2 {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+    }
+
+    #home2 {
+        animation: door2 linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes door2 {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+    }
+
+    #home2 {
+        animation: door2 linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes door2 {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+    }
+
+    #home3 {
+        animation: door2 linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes door2 {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+    }
+
+    #door2 {
+        animation: door2 linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes card {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+    }
+
+    #card {
+        animation: card linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes actoin {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+    }
+
+    #home5 {
+        animation: action linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes door {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+    }
+
+    #door {
+        animation: door linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes sub_door {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+    }
+
+    #sub_door {
+        animation: sub_door linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes t {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+    }
+
+    #t {
+        animation: t linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes ne {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+    }
+
+    #ne {
+        animation: ne linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes door6 {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+    }
+
+    #door6 {
+        animation: door6 linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes door7 {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+    }
+
+    #door7 {
+        animation: door7 linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes door8 {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+    }
+
+    #door8 {
+        animation: door8 linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes carousel-inner {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+    }
+
+    .carousel-inner {
+        animation: carousel-inner linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes f {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+    }
+
+    #f {
+        animation: f linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes magnam {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+    }
+
+    #magnam {
+        animation: magnam linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes accordion-item {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+    }
+
+    .accordion-item {
+        animation: accordion-item linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes Contact {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+    }
+
+    #Contact {
+        animation: Contact linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes fuga {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+    }
+
+    #fuga {
+        animation: fuga linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes door11 {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+    }
+
+    #door11 {
+        animation: door11 linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+
+    @keyframes home12 {
+        from {
+            opacity: 0;
+            transform: translateY(0px);
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-10px);
+            transform: scale(1);
+        }
+    }
+
+    #home12 {
+        animation: home12 linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+}
